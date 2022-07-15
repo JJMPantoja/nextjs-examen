@@ -12,16 +12,15 @@ export default function Employees() {
 
   useEffect(() => {
     fakeToken = JSON.parse(localStorage.getItem('fakeToken'));
-    if ( fakeToken !== null && fakeToken !== '') {
+    if ( fakeToken === null || fakeToken === '') {
       isValidFakeToken = true; 
-      console.log(fakeToken);
-      router.push('/employees');
+      router.push('/login');
     }
   }, [])
   
   return (
     <>
-    {isValidFakeToken  ? <EmployeesChild /> : <Login />}
+    <EmployeesChild />
     </>
     
   )

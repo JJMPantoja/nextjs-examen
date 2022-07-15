@@ -59,13 +59,15 @@ export default function Login() {
                     })
                 }}>
                     <Form className='containerForm' onCopy={(event)=>{event.preventDefault()}} onPaste={(event)=>{event.preventDefault()}}>
-                        <Field className='input_form' name="email" type="email" autocomplete="off"/>
+                        <label>Correo</label>
+                        <Field placeholder="ejemplo@ejemplo.com" className='input_form' name="email" type="email" autocomplete="off"/>
                         <ErrorMessage
                           component="div"
                           name="email"
                           className="invalid-feedback"
                         />
-                        <Field className='input_form' name="pass" type="password" autocomplete="off"/>
+                        <label>Contraseña</label>
+                        <Field placeholder="ingresa una contraseña" className='input_form' name="pass" type="password" autocomplete="off"/>
                         <ErrorMessage
                           component="div"
                           name="pass"

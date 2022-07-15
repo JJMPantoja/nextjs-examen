@@ -50,8 +50,9 @@ export default function EmployeesChild() {
     const thenService = (res) => {
             setemployee(res);
             const modulo = res.length % 10;
-            modulo > 0 && modulo < 5 ? setTotalPages(Math.round( (employee.length/ 10) + 1)) 
-            : setTotalPages(Math.round( employee.length/ 10));
+            debugger;
+            modulo > 0 && modulo < 5 ? setTotalPages(Math.round( (res.length/ 10) + 1)) 
+            : setTotalPages(Math.round( res.length/ 10));
             
     }
     
