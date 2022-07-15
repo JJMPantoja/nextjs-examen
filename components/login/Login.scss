@@ -1,0 +1,48 @@
+.containerfatherLogin {
+  width: 100vw !important;
+  height: 100vh !important;
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex !important;
+}
+
+.containerChildLogin {
+  width: 50% !important;
+}
+
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.containerForm .btnLogin {
+  align-self: center;
+}
+
+.input_form {
+  width: 100%;
+  border-style: none none solid none;
+  border-width: 0px 0px 1px 0px;
+  border-color: rgba(62, 100, 255, 1);
+  outline: none;
+  margin-bottom: 2rem;
+  height: 3rem;
+}
+
+.invalid-feedback {
+  color: #e11900;
+}
+
+.btnLogin {
+  width: 30%;
+  margin: auto;
+  color: #92a9fe !important;
+  border: 1px solid #92a9fe !important;
+  background-color: transparent !important;
+  &:hover {
+    border: 1px solid #92a9fe !important;
+    color: white !important;
+    background-color: #92a9fe !important;
+  }
+}
