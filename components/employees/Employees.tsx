@@ -186,7 +186,7 @@ export default function EmployeesChild() {
                     return (
                             <Table.Row key={item.id}>
                                 <Table.Cell>{item.id}</Table.Cell>
-                                <Table.Cell>{item.name} {item.las_name}</Table.Cell>
+                                <Table.Cell>{item.name} {item.last_name}</Table.Cell>
                                 <Table.Cell>{moment(item.birthday).format('DD/MM/YYYY') }</Table.Cell>
                             </Table.Row>
                         )
